@@ -6,6 +6,7 @@ let
   gradio = python3.pkgs.callPackage ./pkgs/common/gradio.nix { };
   flexgen = python3.pkgs.callPackage ./pkgs/common/flexgen.nix { };
   peft = python3.pkgs.callPackage ./pkgs/common/peft.nix { };
+  llama-cpp-python = python3.pkgs.callPackage ./pkgs/common/llama-cpp-python.nix { };
   autogptq = python3.pkgs.callPackage ./pkgs/linux-nvidia/autogptq.nix { };
 in
 python3.pkgs.buildPythonApplication rec {
